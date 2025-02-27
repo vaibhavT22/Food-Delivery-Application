@@ -1,0 +1,157 @@
+@charset "UTF-8";
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #4C585B;
+    background-color: #F4EDD3;
+  }
+  
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4C585B;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: #7E99A3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #4C585B;
+  }
+  .nav-links input{
+  color:  white;
+  background-color: #7E99A3;
+   text-decoration: none;
+   border:  2px solid #7E99A3  ;
+   border-radius: 2px;
+   padding: 5px;
+   
+  }
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .page-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 2rem 0;
+    color: #4C585B;
+  }
+  
+  .order-history {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .order-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .order-title {
+    font-size: 1.6rem;
+    color: #4C585B;
+    margin: 0 0 1rem 0;
+  }
+  
+  .order-date {
+    color: #7E99A3;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .order-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .order-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .item-info {
+    flex: 1;
+  }
+  
+  .item-info h4 {
+    margin: 0 0 0.5rem 0;
+    color: #4C585B;
+  }
+  
+  .item-info p {
+    margin: 0 0 0.5rem 0;
+    color: #7E99A3;
+  }
+  
+  .item-price {
+    color: #4C585B;
+    font-weight: bold;
+  }
+  
+  .order-total {
+    font-size: 1.2rem;
+    color: #4C585B;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .order-history {
+      padding: 1rem;
+    }
+  
+    .order-card {
+      padding: 1.5rem;
+    }
+  }
+  

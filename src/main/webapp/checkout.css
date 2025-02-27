@@ -1,0 +1,162 @@
+@charset "UTF-8";
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #4C585B;
+    background-color: #F4EDD3;
+}
+  
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #F4EDD3;
+}
+  
+.header {
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+  
+.header-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4C585B;
+    text-decoration: none;
+}
+  
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+  
+.nav-links a {
+    color: #7E99A3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+  
+.nav-links a:hover {
+    color: #4C585B;
+}
+.nav-links input{
+  color:  white;
+  background-color: #7E99A3;
+   text-decoration: none;
+   border:  2px solid #7E99A3  ;
+   border-radius: 2px;
+   padding: 5px;
+   
+  }
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+  
+.page-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 2rem 0;
+    color: #4C585B;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkout-container h3 {
+    font-size: 1.8rem;
+    color: #4C585B;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%; 
+}
+
+form label {
+    font-size: 1.1rem;
+    color: #4C585B;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button.checkout-btn {
+    padding: 1rem;
+    background-color: #4C585B;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: flex-start; 
+}
+
+form button.checkout-btn:hover {
+    background-color: #3C474A;
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+        padding: 1rem; 
+    }
+
+    .checkout-container h3 {
+        font-size: 1.6rem;
+    }
+
+    form {
+        gap: 1rem; 
+    }
+
+    form input,
+    form textarea,
+    form select {
+        padding: 0.75rem; 
+    }
+
+    form button.checkout-btn {
+        width: 100%; 
+    }
+}
